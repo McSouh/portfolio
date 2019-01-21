@@ -1,4 +1,5 @@
 $success: #47B272;
+$primary: #3E9691;
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 $fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
 @import  "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
@@ -41,6 +42,12 @@ nav {
     font-family: bebas;
     font-size: 2em;
     background-color: rgb(24, 24, 24) !important;
+    .active {
+        background-color: $success;
+        a {
+            color: rgb(24, 24, 24) !important;
+        }
+    }
 }
 
 
@@ -53,7 +60,7 @@ h3, .h3 {
     line-height: 0.8em;
 }
 
-#about {
+#banner {
     font-family: Bebas;
     position: relative;
     overflow: hidden;
@@ -98,4 +105,23 @@ h3, .h3 {
         animation: slide 2s;
     }
     
+}
+#about {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    .section-parallax {
+        height: 30vh;
+        background-image: url(../../dist/img/pexels-photo-14676.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    .about {
+        height: 70vh;
+        font-family: bebas;
+        overflow: scroll;
+        h3 {
+        }
+    }
+
 }

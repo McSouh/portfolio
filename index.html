@@ -13,9 +13,9 @@
 
 
     <!-- NAVBAR -->
-    
+
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark text-success fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark text-success fixed-top py-0">
             <div class="container w-75">
                 <a class="navbar text-light mx-auto d-md-block" href="#">McSouh</a>
                 <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
@@ -24,16 +24,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mx-auto mt-2 mt-lg-0 w-75">
-                        <li class="mx-auto">
+                        <li class="px-4 mx-auto active">
                             <a class="nav-link text-success" href="#">Home</a>
                         </li>
-                        <li class="mx-auto">
+                        <li class="px-4 mx-auto">
                             <a class="nav-link text-success" href="#">About</a>
                         </li>
-                        <li class="mx-auto">
+                        <li class="px-4 mx-auto">
                             <a class="nav-link text-success" href="#">Projects</a>
                         </li>
-                        <li class="mx-auto">
+                        <li class="px-4 mx-auto">
                             <a class="nav-link text-success" href="#">Contact</a>
                         </li>
                     </ul>
@@ -45,7 +45,7 @@
 
     <!-- BANNER   -->
 
-    <section id="about">
+    <section id="banner">
         <div class="row">
             <div class="text-success align-self-center textbox">
                 <div class="container">
@@ -62,13 +62,41 @@
         </div>
     </section>
 
+    <section id="about">
+        <div class="section-parallax">
 
+        </div>
+        <div class="container about text-success py-3">
+            <h3 class="mt-5">About me</h3>
+            <hr class="bg-success w-25 ml-0 py-1 mb-5">
+            <p class="h2">Currently following a six month traineeship on html, css, scss,  
+                    javascript, view, php, laravel, github and bash at <a class="text-primary" href="">Molengeek</a>.
+                    I have also taken some courses on OpenClassroom, codecademy 
+                    and udemy to learn deeply html css javascript and php with
+                    another perspective.</p>
+            <ul class="row d-none d-md-flex list-unstyled justify-content-around display-4 py-5 w-50 mx-auto">
+                <a href="">
+                    <li class="px-1"><i class="fab fa-linkedin-in"></i></li>
+                </a>
+                <a href="">
+                    <li class="px-1"><i class="fab fa-github"></i></li>
+                </a>
+                <a href="">
+                    <li class="px-1"><i class="fab fa-google-plus-g"></i></li>
+                </a>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- CDN BOOTSTRAP JQUERY POPPERS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <!-- SCRIPT JS -->
     <script src="./dist/js/script.js"></script>
 </body>
 
