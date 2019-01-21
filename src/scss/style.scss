@@ -1,0 +1,76 @@
+$success: #47B272;
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+$fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
+@import  "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import  "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import  "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@font-face {
+    font-family: Bebas;
+    src: url(../../dist/fonts/BebasNeue.otf);
+}
+
+// ANIMATIONS
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $success; }
+  }
+
+
+
+h1, .h1 {
+    font-size: 6em;
+    line-height: 0.8em;
+}
+h3, .h3 {
+    font-size: 4em;
+    line-height: 0.8em;
+}
+
+#about {
+    font-family: Bebas;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    .textbox {
+        @media (min-width: 765px){
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%,-50%);
+        }
+        @media (max-width: 765px){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .typewriting {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            @media (min-width: 576px){
+                border-right:  10px solid orange; /* The typwriter cursor */
+                white-space: nowrap; /* Keeps the content on a single line */
+                letter-spacing: .08em; /* Adjust as needed */
+                animation: 
+                typing 2s steps(20, end),
+                blink-caret .85s step-end infinite;
+            }
+        }
+    }
+
+    #green_block {
+        position: absolute;
+        height: 100%;
+        width: 60%;
+        right: -20%;
+        transform: skew(10deg);
+    }
+}
