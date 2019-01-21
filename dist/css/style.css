@@ -15113,6 +15113,18 @@ readers do not read off random characters that represent icons */
     border-color: #47B272;
   }
 }
+/* slide effect */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: rotate(-10deg);
+  }
+}
 h1, .h1 {
   font-size: 6em;
   line-height: 0.8em;
@@ -15150,7 +15162,7 @@ h3, .h3 {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
 }
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   #about .textbox .typewriting {
     border-right: 10px solid orange;
     /* The typwriter cursor */
@@ -15161,12 +15173,17 @@ h3, .h3 {
     animation: typing 2s steps(20, end), blink-caret 0.85s step-end infinite;
   }
 }
+#about .textbox .btn-about {
+  border-radius: 10px;
+}
 #about #green_block {
   position: absolute;
-  height: 100%;
+  height: 150vh;
   width: 60%;
+  top: -20%;
   right: -20%;
-  transform: skew(10deg);
+  transform: rotate(-10deg);
+  animation: slide 2s;
 }
 
 /*# sourceMappingURL=style.css.map */
