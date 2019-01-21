@@ -37,7 +37,11 @@ $fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
     }
 }
 
-
+nav {
+    font-family: bebas;
+    font-size: 2em;
+    background-color: rgb(24, 24, 24) !important;
+}
 
 
 h1, .h1 {
@@ -75,7 +79,7 @@ h3, .h3 {
                 white-space: nowrap; /* Keeps the content on a single line */
                 letter-spacing: .08em; /* Adjust as needed */
                 animation: 
-                typing 2s steps(20, end),
+                typing 1.5s steps(30, end),
                 blink-caret .85s step-end infinite;
             }
         }

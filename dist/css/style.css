@@ -15125,6 +15125,12 @@ readers do not read off random characters that represent icons */
     transform: rotate(-10deg);
   }
 }
+nav {
+  font-family: bebas;
+  font-size: 2em;
+  background-color: #181818 !important;
+}
+
 h1, .h1 {
   font-size: 6em;
   line-height: 0.8em;
@@ -15170,7 +15176,7 @@ h3, .h3 {
     /* Keeps the content on a single line */
     letter-spacing: 0.08em;
     /* Adjust as needed */
-    animation: typing 2s steps(20, end), blink-caret 0.85s step-end infinite;
+    animation: typing 1.5s steps(30, end), blink-caret 0.85s step-end infinite;
   }
 }
 #about .textbox .btn-about {
